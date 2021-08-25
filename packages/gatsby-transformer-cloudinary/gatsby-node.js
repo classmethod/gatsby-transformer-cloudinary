@@ -14,7 +14,8 @@ const {
 const { getPluginOptions } = require('./options');
 const pluginOptions = getPluginOptions();
 
-const ALLOWED_MEDIA_TYPES = ['image/png', 'image/jpeg', 'image/gif'];
+//const ALLOWED_MEDIA_TYPES = ['image/png', 'image/jpeg', 'image/gif'];
+const ALLOWED_MEDIA_TYPES = ['image/png', 'image/jpeg', 'image/gif','application/pdf','image/svg+xml'];
 
 exports.onPreExtractQueries = async ({ store, getNodesByType }) => {
   const program = store.getState().program;
